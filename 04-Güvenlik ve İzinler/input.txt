@@ -1,0 +1,1 @@
+Veri 'input.txt' dosyasından okundu

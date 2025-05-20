@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "dev-server": "deno run -A oakserver.ts",
+    "dev-client": "deno run -A appui.ts",
+	"dev": {
+      "dependencies": ["dev-server", "dev-client"]
+    }
+  },
+  "imports": {
+    "@oak/oak": "jsr:@oak/oak@^17.1.4"
+  }
+}

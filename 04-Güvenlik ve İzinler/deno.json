@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "dev1": "deno run -RW filesystemaccess.ts",
+    "dev2": "deno run --allow-read --allow-write filesystemaccess.ts"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "colors": "jsr:@std/fmt/colors",
+    "yargs": "npm:yargs"
+  }
+}
