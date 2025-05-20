@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "dev": "deno run --watch tckontrol.ts",
+    "run": "deno run tckontrol.ts"
+  },
+  "license": "MIT",
+  "author": ["emarti, Murat Özdemir</dtemarti@gmail.com>"],
+  "name": "@emarti/tckontrol",
+  "version": "1.0.0",
+  "description": "TC Kimlik Numarası doğrulama fonksiyonu",
+  "exports": "./tckontrol.ts"
+}

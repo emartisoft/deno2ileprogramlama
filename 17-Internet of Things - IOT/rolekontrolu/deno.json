@@ -1,0 +1,13 @@
+{
+  "imports": {
+    "@emarti/gpiopins": "jsr:@emarti/gpiopins@^1.0.2",
+    "hono": "jsr:@hono/hono@^4.7.5"
+  },
+  "tasks": {
+    "start": "deno run -A main.ts"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  }
+}

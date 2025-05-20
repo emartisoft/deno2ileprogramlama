@@ -1,0 +1,16 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@emarti/tckontrol@1": "1.0.0"
+  },
+  "jsr": {
+    "@emarti/tckontrol@1.0.0": {
+      "integrity": "54aabe8f4026c5a18adfe8ae89d3d01281da627935c3cef7ba62284d85e6d271"
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@emarti/tckontrol@1"
+    ]
+  }
+}

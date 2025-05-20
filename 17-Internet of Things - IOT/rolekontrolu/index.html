@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Röle Kontrolü</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gray-100">
+    <div>
+      <label for="toggle" class="flex items-center cursor-pointer">
+        <div class="mr-3 text-gray-700 font-medium">OFF</div>
+        <div class="relative">
+          <input
+            type="checkbox"
+            id="toggle"
+            class="sr-only"
+            onchange="toggleChanged(this)"
+          >
+          <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
+          <div
+            class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition transform"
+          >
+          </div>
+        </div>
+        <div class="ml-3 text-gray-700 font-medium">ON</div>
+      </label>
+    </div>
+
+    <script>
+      const toggleChanged = async (el) => {
+        // Dot hareketi: checkbox durumuna gore translate uygulama
+        const dot = el.nextElementSibling.nextElementSibling;
+        if (el.checked) {
+          dot.style.transform = "translateX(100%)";
+        } else {
+          dot.style.transform = "translateX(0)";
+        }
+        // Backend fonksiyonunu tetikleme
+        try {
+          const response = await fetch("/toggle", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ state: el.checked ? "ON" : "OFF" }),
+          });
+          const data = await response.json();
+          console.log("Backend yanıtı:", data);
+        } catch (error) {
+          console.error("Hata:", error);
+        }
+      };
+    </script>
+  </body>
+</html>

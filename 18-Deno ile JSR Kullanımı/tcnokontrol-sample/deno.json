@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "@emarti/tckontrol": "jsr:@emarti/tckontrol@^1.0.0"
+  }
+}

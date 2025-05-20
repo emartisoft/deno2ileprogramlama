@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "@b-fuze/deno-dom": "jsr:@b-fuze/deno-dom@^0.1.49",
+    "@google/genai": "npm:@google/genai@^0.12.0",
+    "@google/generative-ai": "npm:@google/generative-ai@^0.21.0",
+    "@littletof/charmd": "jsr:@littletof/charmd@^0.1.2",
+    "@std/dotenv": "jsr:@std/dotenv@^0.225.3",
+    "@std/encoding": "jsr:@std/encoding@^1.0.7",
+    "@std/path": "jsr:@std/path@^1.0.8",
+    "mimetype": "npm:mimetype@^0.0.8",
+    "openai": "npm:openai@^4.85.2",
+    "wrap-ansi": "npm:wrap-ansi@^9.0.0"
+  }
+}
